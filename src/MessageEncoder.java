@@ -9,8 +9,7 @@ public class MessageEncoder {
 		String input;
 		String message = "";
 		int    checksum = 0;
-		int    tmpInt;
-		int    i;
+		int i;
 		
 		System.out.print("What is your message? ");
 		input = scanner.nextLine(); //gets input from console, stores it into "input" variable
@@ -22,7 +21,7 @@ public class MessageEncoder {
 		for (i = 0; i < input.length();
 			 ++i) { //loop through each character in input string
 			
-			tmpInt = input.charAt(i); //gets unicode value of character
+			int tmpInt = input.charAt(i); //gets unicode value of character
 			
 			checksum += tmpInt; //add unicode value to checksum
 			message  += tmpInt; //concatenates value to coded message
