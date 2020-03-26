@@ -9,7 +9,7 @@ public class MessageEncoder {
 		String input;
 		String message = "";
 		int    checksum = 0;
-		int i;
+		int    i;
 		
 		System.out.print("What is your message? ");
 		input = scanner.nextLine(); //gets input from console, stores it into "input" variable
