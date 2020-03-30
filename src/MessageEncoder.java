@@ -24,7 +24,7 @@ public class MessageEncoder {
 			int tmpInt = input.charAt(i); //gets unicode value of character
 			
 			checksum += tmpInt; //add unicode value to checksum
-			message  += tmpInt; //concatenates value to coded message
+			message  += (tmpInt - 64); //concatenates value to coded message
 			
 			if (i != (input.length() - 1)) { //omits dash at the end bc it bugs me
 				message = message.concat("-"); //concatenates dashes to message
